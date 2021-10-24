@@ -151,9 +151,57 @@ input[type=text]:hover{
 label{
   font-size: 24px;
   display: block;
-  width: 150px;
+  width: 250px;
 }
 
+.strona-podrecznik{
+  color: black;
+  margin: 20px auto auto;
+  width: 60%;
+  height: 850px;
+  border: 2px black solid;
+  box-shadow: 0px 0px 68px 3px rgba(4, 5, 7, 0.3);
+}
+.tytul-podrecznik{
+  padding: 10px 10px;
+  font: 26px bold;
+}
+.zadanie-podrecznik{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+.tresc-podrecznik{
+  padding: 0px 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+.bold-text-list{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.list-center{
+  margin: auto;
+  width: 75%;
+  text-align: inherit;
+}
+.zadanie2{
+  margin: auto;
+  width: 65%;
+}
+.podrecznik1{
+  position: center;
+  margin: auto;
+  width: 100%;
+}
+.podrecznik2{
+  padding: 0px 50px;
+  position: relative;
+  width: 80%;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
