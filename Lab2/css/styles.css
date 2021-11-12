@@ -158,7 +158,23 @@ label{
   display: block;
   width: 250px;
 }
-
+.zoom{
+  width: 60px;
+}
+.zoom::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.zoom-img{
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.zoom img{
+  width: 100%;
+  height: auto;
+}
 .strona-podrecznik{
   color: black;
   margin: 20px auto auto;
