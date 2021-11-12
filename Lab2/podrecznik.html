@@ -29,14 +29,14 @@
 </nav>
 <!-- Page content-->
 <div  class="container">
-  <div id="strona-podrecznik" class="strona-podrecznik">
+  <div id="strona-podrecznik" class="strona-podrecznik" onmouseenter="roundCorner(this,'0px')" onmouseleave="roundCorner(this,'25px')">
     <p class="tytul-podrecznik">Zadania</p>
     <p class="zadanie-podrecznik">
       <b>1.</b> Naszkicuj w jednym układzie współrzędnych te spośród prostych l 1 , ..., l 8 ,
       które przecinają oś OY w punkcie (0, 2), a w drugim te, które przecinają
       oś OY w punkcie (0, −1).
     </p>
-    <p class="tresc-podrecznik">
+    <p class="tresc-podrecznik" onmouseenter="markText(this,'125%','bold')" onmouseleave="markText(this,'100%','normal')">
       l<sub>1</sub>: y = 3x+2 l<sub>3</sub>: y = 1 l<sub>5</sub>: y = −2x+2 l<sub>7</sub>: y = &frac12;x−1<br>
       l<sub>2</sub>: y = 3x−1 l<sub>4</sub>: y = 2 l<sub>6</sub>: y = −2x−1 l<sub>8</sub>: y = &frac12;x+2
     </p>
@@ -45,7 +45,7 @@
       do niego punkt P.
     </p>
     <div class="zadanie2">
-      <p class="tresc-podrecznik">
+      <p class="tresc-podrecznik" onmouseenter="markText(this,'125%','bold')" onmouseleave="markText(this,'100%','normal')">
         <b>a)</b> P(8, 3), Q(16, 9) <b>b)</b> P(−6, −9), Q(7, 19) <b>c)</b> P(9, −4), Q 8, −3
       </p>
       <img src="assets/podrecznik1.png" class="podrecznik1">
@@ -54,7 +54,7 @@
       <b>3.</b> Wykres funkcji liniowej przechodzi przez punkt P i przecina oś OY
       w punkcie (0, 4). Wyznacz wzór tej funkcji i naszkicuj jej wykres.
     </p>
-    <p class="tresc-podrecznik">
+    <p class="tresc-podrecznik" onmouseenter="markText(this,'125%','bold')" onmouseleave="markText(this,'100%','normal')">
       <b>a)</b> P(2, 6) <b>b)</b> P(−6, 1) <b>c)</b> P(5, −11) <b>d)</b> P(&frac35;, −11)
     </p>
     <p class="zadanie-podrecznik">
@@ -69,6 +69,7 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/zooming.min.js"></script>
 <script src="js/podrecznik.js"></script>
+<script src="js/transition.min.js"></script>
 <script>
   new Zooming().listen('img')
 </script>

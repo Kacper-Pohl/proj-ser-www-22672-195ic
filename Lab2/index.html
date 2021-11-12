@@ -14,6 +14,7 @@
             body{
                 background-image:  url('assets/background.jpg');
                 background-position: center;
+                background-attachment: fixed;
             }
         </style>
     </head>
@@ -41,7 +42,7 @@
                 <p class="lead"><b>22672 - 195IC A</b></p>
                 <div id="txt"></div>
             </div>
-            <div class="stopka">
+            <div onmouseenter="resize(this,'150%')" onmouseleave="resize(this,'100%')" class="stopka">
                 Technologie:<br>
                 <a class="link-danger" href="https://getbootstrap.com">Bootstrap</a>
                 <a class="link-danger" href="https://developer.mozilla.org/pl/docs/Web/JavaScript">JavaScript</a>
