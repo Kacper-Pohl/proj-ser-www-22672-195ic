@@ -11,7 +11,7 @@
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
+<body id="container">
 <!-- Responsive navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
@@ -28,8 +28,8 @@
   </div>
 </nav>
 <!-- Page content-->
-<div class="container">
-  <div class="strona-podrecznik">
+<div  class="container">
+  <div id="strona-podrecznik" class="strona-podrecznik">
     <p class="tytul-podrecznik">Zadania</p>
     <p class="zadanie-podrecznik">
       <b>1.</b> Naszkicuj w jednym układzie współrzędnych te spośród prostych l 1 , ..., l 8 ,
@@ -68,6 +68,7 @@
 <!-- Core theme JS-->
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/zooming.min.js"></script>
+<script src="js/podrecznik.js"></script>
 <script>
   new Zooming().listen('img')
 </script>
