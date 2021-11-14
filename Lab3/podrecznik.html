@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="Kacper Pohl" />
+  <title>Super Strona</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="container">
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Strona WWW</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="list.html">List</a></li>
+        <li class="nav-item"><a class="nav-link" href="formularz.html">Formularz</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="podrecznik.html">Podręcznik</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Page content-->
+<div  class="container">
+  <div id="strona-podrecznik" class="strona-podrecznik" onmouseenter="roundCorner(this,'0px')" onmouseleave="roundCorner(this,'25px')">
+    <p class="tytul-podrecznik">Zadania</p>
+    <p class="zadanie-podrecznik">
+      <b>1.</b> Naszkicuj w jednym układzie współrzędnych te spośród prostych l 1 , ..., l 8 ,
+      które przecinają oś OY w punkcie (0, 2), a w drugim te, które przecinają
+      oś OY w punkcie (0, −1).
+    </p>
+    <p class="tresc-podrecznik" onmouseenter="markText(this,'125%','bold')" onmouseleave="markText(this,'100%','normal')">
+      l<sub>1</sub>: y = 3x+2 l<sub>3</sub>: y = 1 l<sub>5</sub>: y = −2x+2 l<sub>7</sub>: y = &frac12;x−1<br>
+      l<sub>2</sub>: y = 3x−1 l<sub>4</sub>: y = 2 l<sub>6</sub>: y = −2x−1 l<sub>8</sub>: y = &frac12;x+2
+    </p>
+    <p class="zadanie-podrecznik">
+      <b>2.</b> Sprawdź, czy punkt Q należy do wykresu funkcji liniowej f, jeśli należy
+      do niego punkt P.
+    </p>
+    <div class="zadanie2">
+      <p class="tresc-podrecznik" onmouseenter="markText(this,'125%','bold')" onmouseleave="markText(this,'100%','normal')">
+        <b>a)</b> P(8, 3), Q(16, 9) <b>b)</b> P(−6, −9), Q(7, 19) <b>c)</b> P(9, −4), Q 8, −3
+      </p>
+      <img src="assets/podrecznik1.png" class="podrecznik1">
+    </div>
+    <p class="zadanie-podrecznik">
+      <b>3.</b> Wykres funkcji liniowej przechodzi przez punkt P i przecina oś OY
+      w punkcie (0, 4). Wyznacz wzór tej funkcji i naszkicuj jej wykres.
+    </p>
+    <p class="tresc-podrecznik" onmouseenter="markText(this,'125%','bold')" onmouseleave="markText(this,'100%','normal')">
+      <b>a)</b> P(2, 6) <b>b)</b> P(−6, 1) <b>c)</b> P(5, −11) <b>d)</b> P(&frac35;, −11)
+    </p>
+    <p class="zadanie-podrecznik">
+      <b>4.</b> Oblicz pole zacieniowanej ﬁgury.
+    </p>
+    <img id="img-default" data-action="zoom" src="assets/podrecznik2.png" class="podrecznik2">
+  </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/zooming.min.js"></script>
+<script src="js/podrecznik.js"></script>
+<script src="js/transition.min.js"></script>
+<script>
+  new Zooming().listen('img')
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Kacper Pohl" />
+    <title>Super Strona</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body{
+            color: black
+        }
+    </style>
+</head>
+<body >
+<!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container">
+        <a class="navbar-brand" href="#">Strona WWW</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="list.html">List</a></li>
+                <li class="nav-item"><a class="nav-link" href="formularz.html">Formularz</a></li>
+                <li class="nav-item"><a class="nav-link" href="podrecznik.html">Podręcznik</a></li>
+            </ul>
+            <div class="zoom">
+                <div class="zoom-img" onclick="resizeText(1)">
+                    <img src="assets/plus.png">
+                </div>
+                <div class="zoom-img" onclick="resizeText(-1)">
+                    <img src="assets/minus.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Page content-->
+<div class="container" >
+    <div class="list-box" >
+        <div class="text-lg-end" >
+            <p id="date" class="bold-text-list"></p>
+        </div>
+        <div class="text-lg-start">
+            <p class="bold-text-list">
+                Kacper Pohl<br>
+                195IC A, 22672
+            </p>
+        </div>
+        <div id="buttonList"></div>
+        <br>
+        <div class="text-center">
+            <p class="bold-text-list">Szanowny XYZ</p>
+        </div>
+        <br>
+        <div id="txt" class="list-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum mi nec elit ullamcorper posuere. Nullam in nunc sed turpis posuere pellentesque. Mauris enim massa, placerat ac elementum eget, dictum luctus quam. Pellentesque vehicula congue quam, at dignissim ipsum interdum a. Nullam at ipsum sem. Pellentesque ultrices tellus eros, in interdum nunc lobortis tincidunt. Nunc tempor quam urna, non blandit lorem luctus a. Pellentesque commodo nisi sit amet luctus accumsan. Suspendisse potenti. Nam non nunc et neque ullamcorper ultricies ac nec velit. Donec gravida finibus diam vitae posuere. Donec justo mauris, maximus in massa in, commodo feugiat massa.
+            <br>
+            Maecenas auctor tortor pulvinar quam efficitur vestibulum. Integer a sagittis lectus. Cras dictum nulla rhoncus lectus euismod, eget sollicitudin libero pharetra. Vestibulum at tristique lorem, id posuere mi. Duis tincidunt risus arcu, id pharetra ex pretium quis. In auctor eros eu tortor suscipit tempus. Etiam porttitor, mauris id auctor sodales, lorem leo venenatis dolor, eget convallis nisi tortor ac erat. Sed efficitur est at dolor rhoncus, at finibus mauris placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis tempor, velit ac consequat rutrum, urna sem maximus purus, vitae lobortis nisi mauris ac metus. Donec eget enim lacus. Nulla ac velit consequat, finibus ex ac, faucibus risus. Praesent quis sodales dolor. Sed iaculis ipsum ut justo vulputate sagittis.
+            <br>
+            Aliquam lobortis sapien ac placerat sodales. Donec felis leo, molestie ultricies lectus sit amet, interdum commodo tortor. Donec tempus hendrerit leo nec molestie. Aliquam eget finibus tellus. Donec eget lorem sed metus pellentesque interdum sed sed metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique cursus tristique. Proin lobortis egestas nunc nec elementum. Vestibulum eget mauris accumsan, gravida tellus in, sagittis felis. Curabitur tempus dictum tellus, vel condimentum enim euismod in. Vestibulum hendrerit placerat augue vitae tristique.
+            <br>
+            Nulla tincidunt magna nunc, eget luctus dolor blandit in. Etiam nec odio dui. Ut lectus enim, dictum vel blandit eget, elementum ut metus. Vestibulum non ex vitae purus auctor ornare vitae a justo. Cras mollis, orci sit amet sodales sagittis, quam ipsum interdum mi, ut hendrerit massa nulla eget felis. Nam tempor eleifend dolor a vestibulum. Sed interdum lorem eros, ac placerat sapien pharetra non. Sed ac condimentum arcu.
+        </div>
+        <br>
+        <div class="text-md-end">
+            <p class="bold-text-list">Z poważaniem</p>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/list.js"></script>
+</body>
+</html>
