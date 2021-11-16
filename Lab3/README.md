@@ -1,4 +1,4 @@
-# Lab nr. 2
+# Lab nr. 3
 
 ### Strona startowa - Home (intex.html)
 
@@ -20,4 +20,3 @@ Po podwójnym kliknięciu na stronę podręcznika (addEventListener('dblclick'))
 
 ![](assets/screenshot/podrecznik1.png)
 ![](assets/screenshot/podrecznik2.png)
-)
