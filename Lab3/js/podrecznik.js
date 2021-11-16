@@ -8,6 +8,7 @@ cont.style.backgroundColor = "silver";
 strona.style.backgroundColor = "white";
 strona.style.boxShadow = "10px 20px 30px black";
 strona.style.borderStyle = "outset";
+strona.style.borderWidth = 'thin';
 strona.style.borderRadius = '25px';
 
 function roundCorner(elem, roundes){
@@ -25,3 +26,12 @@ strona.addEventListener('dblclick', function (){
 window.addEventListener('resize',function (){
     cont.style.backgroundColor = randomColors();
 })
+
+window.addEventListener('wheel',function (eve){
+    if(eve.deltaY > 0){
+        strona.style.borderWidth = 'thin';
+    }else{
+        strona.style.borderWidth = 'thick';
+    }
+})
+
