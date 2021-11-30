@@ -27,10 +27,13 @@ const snakeboard_ctx = snakeboard.getContext("2d");
 
 
 window.addEventListener("keydown", function (e){
-    if(e.code === "Enter" && has_game_ended()===false){
-        speed_fix=1;
-        main();
-        gen_food();
+    if(e.code === "Enter"){
+        if(speed_fix===0){
+            speed_fix=1;
+            main();
+            gen_food();
+        }
+
     }
 })
 
