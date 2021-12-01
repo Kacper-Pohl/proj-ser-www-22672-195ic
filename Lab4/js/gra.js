@@ -50,15 +50,10 @@ window.addEventListener('keydown', function (e) {
         ]
         score = 0;
         document.getElementById('score').innerHTML = score
+
         main();
         gen_food();
-        setTimeout(function onTick() {
-            clear_board();
-            drawFood();
-            move_snake();
-            drawSnake();
-            main();
-        }, 100)
+
     }
 })
 
