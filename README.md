@@ -7,3 +7,7 @@
 #### [Lab 2 :fire:](https://github.com/Kacper-Pohl/proj-ser-www-22672-195ic/tree/main/Lab2)
 
 #### [Lab 3 :fire:](https://github.com/Kacper-Pohl/proj-ser-www-22672-195ic/tree/main/Lab3)
+
+#### [Lab 4 :fire:](https://github.com/Kacper-Pohl/proj-ser-www-22672-195ic/tree/main/Lab4)
+
+#### [Lab 5 :fire:](https://github.com/Kacper-Pohl/proj-ser-www-22672-195ic/tree/main/Lab5)
