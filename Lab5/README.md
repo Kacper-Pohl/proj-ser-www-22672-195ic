@@ -18,8 +18,8 @@
 
 ### Zadanie 4
 
-![](sc/kod5.png)
-![](sc/5.png)
+![](sc/kod4.png)
+![](sc/4.png)
 
 ### Zadanie 5
 
