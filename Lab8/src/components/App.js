@@ -14,7 +14,7 @@ function bgColor(){
 class App extends React.Component{
 
     state = {weatherResult: null}
-
+    //funkcja asynchroniczna, w której są pobierane dane dotyczące pogody
     onSearchSubmit = async (searchInputValue) => {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchInputValue}&appid=ca261c971d5638db9d4d6cbccc1f093d`)
         this.setState({weatherResult: response.data})

@@ -1,12 +1,15 @@
 import React from 'react'
 import '../Style.css'
 
+
+//klasa która pobiera wpisane miasto z forma.
 class CitySearch extends React.Component{
 
     constructor(props){
         super(props)
         this.state = {searchInputValue: ""}
     }
+    //po potwierdzeniu forma, przypisuje wyszukiwane miasto
 
     onFormSubmit = (event) =>{
         event.preventDefault();

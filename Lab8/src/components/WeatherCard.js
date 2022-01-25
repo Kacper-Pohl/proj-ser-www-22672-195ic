@@ -1,23 +1,24 @@
 import React from 'react'
 import '../Style.css'
 
-
+//klasa która odpowiada za wygląd i rozkład informacji pobranych z bazy strony
 class WeatherCard extends React.Component{
 
     constructor(props){
         super(props)
     }
-
+    //zamienia kelviny na celsjusza
     spitOutCelcius = (kelvin) => {
         const celcius = Math.round(kelvin - 273.15);
         return celcius;
     }
-
+    //pobiera ikonę pogody, np. zachmurzenie
     getWeatherIcon = (iconParameter) => {
         const icon = `https://openweathermap.org/img/wn/${iconParameter}@2x.png`
         return <img src = {icon} alt = "" />
     }
 
+    //układ karty z informacjami.
     render() {
         return(
             <div className="card rounded my-3 shadow-lg back-card">
