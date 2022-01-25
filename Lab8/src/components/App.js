@@ -4,6 +4,13 @@ import '../Style.css'
 import CitySearch from './CitySearch';
 import WeatherCard from './WeatherCard'
 
+function randomColors() {
+    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+function bgColor(){
+    document.body.style.backgroundImage = 'linear-gradient(to left, ' + randomColors() + ', ' + randomColors() + ')';
+}
+
 class App extends React.Component{
 
     state = {weatherResult: null}
@@ -15,10 +22,13 @@ class App extends React.Component{
 
     render() {
         return(
-            <div className="container my-5">
-                <h1 className="text-center title">Weather in</h1>
-                 <CitySearch onSearchSubmit = {this.onSearchSubmit} />
-                 {this.state.weatherResult ?  <WeatherCard weatherResult = {this.state.weatherResult} /> : <div></div>}
+            <div onLoad={() => bgColor()} >
+                <a href="https://openweathermap.org"><img width={108} height={46} src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"/></a>
+                <div  className="container my-5">
+                    <h1 className="text-center title">Weather in</h1>
+                    <a onClick={() => bgColor()}><CitySearch onSearchSubmit={this.onSearchSubmit}/></a>
+                    {this.state.weatherResult ? <WeatherCard weatherResult={this.state.weatherResult}/> : <div></div>}
+                </div>
             </div>
         )
     }
